@@ -37,7 +37,7 @@ def pedidos_por_dia(df):
     }, text='qtd',color_continuous_scale='greens')
 
     fig.update_traces(textposition='inside')#,texttemplate='%{text:.2s}')
-    fig.update_yaxes(showticklabels=False,showgrid=False, ,title_font_color="rgba(0, 0, 0, 0)")
+    fig.update_yaxes(showticklabels=False,showgrid=False,title_font_color="rgba(0, 0, 0, 0)")
     return fig
 
 
