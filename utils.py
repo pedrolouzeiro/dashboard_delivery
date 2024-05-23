@@ -44,7 +44,7 @@ def pedidos_por_dia(df):
 def traffic_share(df):   
     tipo_trafego=df.groupby(["Road_traffic_density"])['ID'].count().to_frame('qtd').reset_index()
 
-    fig = px.pie(tipo_trafego, values='qtd', names='Road_traffic_density',title="Quantidade de pedidos por tráfego",color_discrete_sequence=['rgb(116,196,118)','rgb(0,109,44)'])
+    fig = px.pie(tipo_trafego, values='qtd', names='Road_traffic_density',title="Quantidade de Pedidos por Tráfego",color_discrete_sequence=['rgb(116,196,118)','rgb(0,109,44)'])
     return fig
 
 def traffic_city(df):
@@ -54,7 +54,7 @@ def traffic_city(df):
                         x="City",
                         y="Road_traffic_density",
                         size="qtd",size_max=60, 
-                        title="Quantidade de pedidos por Tráfego e Cidade",                        
+                        title="Quantidade de Pedidos por Tráfego e Cidade",                        
                         color_discrete_sequence=['rgb(161,217,155)','rgb(35,139,69)','rgb(0,68,27)'],
                         labels={
                         'City': 'Cidade',
@@ -98,7 +98,7 @@ def order_share_by_week(df):
             x='week_of_year', 
             y='qtd', 
             text='qtd', 
-            title="Média de pedidos por Semana",
+            title="Média de Pedidos por Semana",
             labels={
             'qtd': 'Média',
             'week_of_year': 'Semana do Ano'
