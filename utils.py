@@ -32,8 +32,7 @@ def clean_code(df):
 def pedidos_por_dia(df):
     qtd_dia=df.groupby(['Order_Date'])['ID'].count().to_frame('qtd').reset_index()
     fig = px.bar(qtd_dia, x='Order_Date', y='qtd',color="qtd",labels={
-        'Order_Date': 'Data do pedido',
-        'qtd': 'Quantidade'
+        'Order_Date': 'Data do Pedido'
     }, text='qtd',color_continuous_scale='greens')
 
     fig.update_traces(textposition='inside')#,texttemplate='%{text:.2s}')
@@ -54,7 +53,7 @@ def traffic_city(df):
                         x="City",
                         y="Road_traffic_density",
                         size="qtd",size_max=60, 
-                        title="Quantidade de Pedidos por Tráfego e Cidade",                        
+                        title="Porcentagem de Pedidos por Tráfego e Cidade",                        
                         color_discrete_sequence=['rgb(161,217,155)','rgb(35,139,69)','rgb(0,68,27)'],
                         labels={
                         'City': 'Cidade',
