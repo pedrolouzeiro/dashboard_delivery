@@ -32,11 +32,12 @@ def clean_code(df):
 def pedidos_por_dia(df):
     qtd_dia=df.groupby(['Order_Date'])['ID'].count().to_frame('qtd').reset_index()
     fig = px.bar(qtd_dia, x='Order_Date', y='qtd',color="qtd",labels={
-        'Order_Date': 'Data do Pedido'
+        'Order_Date': 'Data do Pedido',
+        'qtd': 'Quantidade'
     }, text='qtd',color_continuous_scale='greens')
 
     fig.update_traces(textposition='inside')#,texttemplate='%{text:.2s}')
-    fig.update_yaxes(showticklabels=False,showgrid=False,)
+    fig.update_yaxes(showticklabels=False,showgrid=False)
     return fig
 
 
