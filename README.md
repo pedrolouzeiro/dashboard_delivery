@@ -72,7 +72,7 @@ Este repositório contém arquivos e script para construir um painel de estraté
 
 # 5. O produto final do projeto
     1. Painel online, hospedado em um Cloud e disponível para acesso em qualquer dispositivo conectado à internet.
-    2. O painel pode ser acessado através desse link: [https://pedrolouzeiro-dashboard-delivery.streamlit.app/](https://pedrolouzeiro-dashboard-delivery.streamlit.app/)
+    2. O painel pode ser acessado através desse link: [Projeto](https://pedrolouzeiro-dashboard-delivery.streamlit.app/)
 
 # 6. Conclusão
     1. O objetivo desse projeto é criar um conjunto de gráficos e/ou tabelas que exibam essas métricas da melhor forma possível para o CEO.
